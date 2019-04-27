@@ -55,10 +55,10 @@ if (!CurrentUser::hasAcceptedNewTermsOfUse()) {
     echo $this->Form->end();
 }
 
-/*
 if (Configure::read('Announcement.enabled')) {
-    $announcementId = 'announcement-123';
-    $announcementText = 'Announcement text here.';
+    $announcementId = 'server-reboot-2019-04';
+    $announcementText = 'We will be rebooting our server on Sunday, April 28th at around 12:00 UTC. 
+        Tatoeba will be unavailable for a short period of time (up to one hour).';
 
     $closeButton = $this->Html->div('close button', $this->Images->svgIcon('close'));
     $content = $this->Html->div('content', $announcementText);
@@ -71,7 +71,6 @@ if (Configure::read('Announcement.enabled')) {
         )
     );
 }
-*/
 
 if (Configure::read('Tatoeba.devStylesheet')) {
     $content = __(
